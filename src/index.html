@@ -6,6 +6,24 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
-<div>Welkom op de povigo website</div>
-</body>
+<div>Welkom op de povigo website.</div>
+<div>Laat hier je gegevens achther:</div>
+<form name="contact"
+      method="POST"
+      netlify
+      netlify-honeypot="honeypot">
+    <p style="visibility: hidden">
+        <label>Don’t fill this out if you're human: <input name="honeypot"/></label>
+    </p>
+
+    <p>
+        <label>Voornaam: <input type="text" name="voornaam"/></label>
+    </p>
+    <p>
+        <label>Naam: <input type="text" name="naam"/></label>
+    </p>
+    <p>
+        <button type="submit">Send</button>
+    </p>
+</form>
 </html>
