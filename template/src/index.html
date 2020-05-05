@@ -1,0 +1,31 @@
+{% extends "template.html" %}
+
+{% block meta %}
+  <title>Appland Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+{% endblock %}
+
+{% block content %}
+
+  {% include "parts/hero.html" %}
+
+  <main id="main">
+
+    {% include "parts/features-section.html" %}
+
+    {% include "parts/details-section.html" %}
+
+    {% include "parts/gallery-section.html" %}
+
+    {% include "parts/testimonials-section.html" %}
+
+    {% include "parts/pricing-section.html" %}
+
+    {% include "parts/faq-section.html" %}
+
+    {% include "parts/contact-section.html" %}
+
+  </main><!-- End #main -->
+
+{% endblock %}
