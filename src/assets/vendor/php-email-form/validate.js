@@ -108,7 +108,12 @@ jQuery(document).ready(function($) {
     $.ajax({
       type: "POST",
       url: action,
-      data: str
+      data: str,
+      success: function() {
+          this_form.find('.loading').slideUp();
+          this_form.find('.sent-message').slideDown();
+          this_form.find("input:not(input[type=submit]), textarea").val('');
+      }
     });
     return false;
   });
