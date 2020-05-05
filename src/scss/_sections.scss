@@ -13,6 +13,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+
   h2 {
     font-size: 32px;
     font-weight: 400;
@@ -21,6 +22,7 @@ section {
     color: $primary;
     font-family: $font-secondary;
   }
+
   p {
     margin-bottom: 0;
   }
@@ -43,25 +45,27 @@ section {
         margin: 5px 0 10px 60px;
 
       }
-    
+
       i {
         font-size: 48px;
         float: left;
         color: $primary;
       }
-    
+
       p {
         font-size: 15px;
         color: lighten($default, 25);
         margin-left: 60px;
       }
-      
+
     }
-  
+
   }
+
   @media (max-width: 991px) {
     .image {
       text-align: center;
+
       img {
         max-width: 80%;
       }
@@ -92,19 +96,22 @@ section {
       font-size: 32px;
       color: $secondary;
     }
-  
+
     ul {
       list-style: none;
       padding: 0;
+
       li {
         padding-bottom: 10px;
       }
+
       i {
         font-size: 20px;
         padding-right: 4px;
         color: $primary;
       }
     }
+
     p:last-child {
       margin-bottom: 0;
     }
@@ -115,11 +122,11 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
-.gallery  {
+.gallery {
   overflow: hidden;
 
   img {
-    border-radius: 10px;
+    border-radius: 25px;
   }
 
   .owl-nav, .owl-dots {
@@ -137,7 +144,7 @@ section {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: lighten( $primary, 42) !important;
+    background-color: #fff !important;
   }
 
   .owl-dot.active {
@@ -152,7 +159,7 @@ section {
     }
 
     @media (min-width: 992px) {
-      .center  {
+      .center {
         border: 6px solid $primary;
         padding: 4px;
         background: #fff;
@@ -179,7 +186,7 @@ section {
     padding: 30px 30px 30px 60px;
     margin: 30px 15px;
     min-height: 200px;
-    box-shadow: 0px 2px 12px rgba(0,0,0,.08);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, .08);
     position: relative;
     background: $white;
 
@@ -201,7 +208,7 @@ section {
     h4 {
       font-size: 14px;
       color: #999;
-      margin:0;
+      margin: 0;
     }
 
     .quote-icon-left, .quote-icon-right {
@@ -219,7 +226,7 @@ section {
       display: inline-block;
       right: -5px;
       position: relative;
-      top:10px;
+      top: 10px;
     }
 
     p {
@@ -247,14 +254,15 @@ section {
     background-color: $primary !important;
   }
 
-  @media (max-width: 767px ) {
+  @media (max-width: 767px) {
     .testimonial-wrap {
       padding-left: 0;
     }
-    
+
     .testimonial-item {
       padding: 30px;
       margin: 15px;
+
       .testimonial-img {
         position: static;
         left: auto;
@@ -262,7 +270,7 @@ section {
     }
 
   }
-  
+
 }
 
 /*--------------------------------------------------------------
@@ -402,11 +410,14 @@ section {
       font-size: 18px;
       padding-right: 4px;
     }
+
     .na {
       color: #ccc;
+
       i {
         color: #ccc;
       }
+
       span {
         text-decoration: line-through;
       }
@@ -424,6 +435,7 @@ section {
     font-weight: 400;
     font-family: $font-primary;
     transition: 0.3s;
+
     &:hover {
       background: $primary;
     }
@@ -432,10 +444,12 @@ section {
   .featured {
     z-index: 10;
     margin: -30px -5px 0 -5px;
+
     .get-started-btn {
       background: $primary;
+
       &:hover {
-        background:lighten( $primary, 8);
+        background: lighten($primary, 8);
       }
     }
   }
@@ -470,6 +484,7 @@ section {
 
   .accordion-list {
     padding: 0 100px;
+
     ul {
       padding: 0;
       list-style: none;
@@ -484,18 +499,35 @@ section {
       background: #fff;
       border-radius: 4px;
       position: relative;
+
+      > a {
+        display: block;
+        position: relative;
+        font-family: $font-secondary;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        padding: 0 30px;
+        outline: none;
+      }
+
+      > a.collapsed {
+        color: $black;
+
+        &:hover {
+          color: $primary;
+        }
+
+        .icon-show {
+          display: inline-block;
+        }
+
+        .icon-close {
+          display: none;
+        }
+      }
     }
 
-    a {
-      display: block;
-      position: relative;
-      font-family: $font-secondary;
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 500;
-      padding: 0 30px;
-      outline: none;
-    }
 
     .icon-help {
       font-size: 24px;
@@ -519,22 +551,6 @@ section {
 
     .icon-show {
       display: none;
-    }
-
-
-    a.collapsed {
-      color: $black;
-      &:hover {
-        color: $primary;
-      }
-
-      .icon-show {
-        display: inline-block;
-      }
-
-      .icon-close {
-        display: none;
-      }
     }
   }
 
@@ -592,7 +608,7 @@ section {
       font-weight: 400;
       font-size: 13px;
     }
-    
+
     .error-message {
       display: none;
       color: #fff;
@@ -601,7 +617,7 @@ section {
       padding: 15px;
       font-weight: 600;
     }
-    
+
     .sent-message {
       display: none;
       color: #fff;
@@ -610,13 +626,13 @@ section {
       padding: 15px;
       font-weight: 600;
     }
-  
+
     .loading {
       display: none;
       background: #fff;
       text-align: center;
       padding: 15px;
-  
+
       &:before {
         content: "";
         display: inline-block;
@@ -628,7 +644,7 @@ section {
         border-top-color: #eee;
         animation: animate-loading 1s linear infinite;
       }
-  
+
     }
 
     label {
@@ -641,6 +657,7 @@ section {
       border-radius: 0;
       box-shadow: none;
       font-size: 14px;
+
       &::focus {
         background-color: $primary;
       }
@@ -662,12 +679,13 @@ section {
       transition: 0.4s;
       border-radius: 50px;
       margin-top: 5px;
+
       &:hover {
         background: $primary;
         color: $white;
       }
     }
-  
+
   }
 
   @media (max-width: 1024px) {
@@ -680,10 +698,14 @@ section {
       padding: 15px 0 0 0;
     }
   }
-  
+
   @keyframes animate-loading {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 
