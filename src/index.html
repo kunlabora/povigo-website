@@ -1,28 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Povigo</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-</head>
-<body>
-<div>Welkom op de povigo website.</div>
-<div>Laat hier je gegevens achther:</div>
-<form name="contact"
-      method="POST"
-      netlify
-      netlify-honeypot="honeypot">
-    <p style="display: none">
-        <label>Vul dit veld niet in als je een mens bent: <input name="honeypot"/></label>
-    </p>
-    <p>
-        <label>Voornaam: <input type="text" name="voornaam"/></label>
-    </p>
-    <p>
-        <label>Naam: <input type="text" name="naam"/></label>
-    </p>
-    <p>
-        <button type="submit">Verstuur</button>
-    </p>
-</form>
-</html>
+{% extends "template.html" %}
+
+{% block meta %}
+<title>Povigo</title>
+<meta name="description"
+      content="Met Povigo willen we een digitale groei-app introduceren die mensen na een burn-out versterkt om samen met een jobcoach opnieuw stappen in de richting van de arbeidsmarkt te zetten. Eigenaarschap in het ontwikkelproces staat centraal.">
+<meta content="" name="keywords">
+{% endblock %}
+
+{% block content %}
+
+{% include "parts/hero.html" %}
+
+<main id="main">
+
+    {% include "parts/contact-section.html" %}
+
+</main><!-- End #main -->
+
+{% endblock %}

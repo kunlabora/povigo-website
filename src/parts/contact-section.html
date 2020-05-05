@@ -1,0 +1,103 @@
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Contact</h2>
+            <div class="row justify-content-center">
+                <p class="col-lg-10">
+                    De Povigo app wordt momenteel uitgetest in een testtraject, om het potentieel van een groei-app te
+                    valideren. Je kan enkel meedoen als je een jobcoach hebt die verbonden is aan één van de betrokken
+                    organisaties.
+                    <br><br>
+                    Wil jij of je organisatie graag meedoen? Kunnen we zeker bekijken. Zie je waardevolle uitbreidingen
+                    of een breder toepassingsgebied: dat bekijken we ook graag. Andere vragen?
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <form name="contact"
+                      method="POST"
+                      action="/"
+                      novalidate
+                      netlify
+                      netlify-honeypot="honeypot"
+                      role="form"
+                      class="php-email-form"
+                      data-aos="fade-up">
+                    <div class="hidden form-group">
+                        <input id="honeypot"
+                               name="honeypot"
+                               type="text"
+                               class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="voornaam"
+                               name="voornaam"
+                               placeholder="Voornaam"
+                               type="text"
+                               class="form-control"
+                               data-rule="required"
+                               data-msg="Geef je voornaam in"/>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <input id="naam"
+                               name="naam"
+                               placeholder="Naam"
+                               type="text"
+                               class="form-control"
+                               data-rule="required"
+                               data-msg="Geef je naam in"/>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <input id="email"
+                               name="email"
+                               placeholder="Email"
+                               type="email"
+                               class="form-control"
+                               data-rule="email"
+                               data-msg="Geef een geldig email adres in"/>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <input id="telefoon"
+                               name="telefoon"
+                               placeholder="Telefoonnummer"
+                               type="text"
+                               class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="organisatie"
+                               name="organisatie"
+                               placeholder="Organistie"
+                               type="text"
+                               class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="bericht"
+                                  name="bericht"
+                                  placeholder="Bericht"
+                                  class="form-control"
+                                  rows="5"
+                                  data-rule="required"
+                                  data-msg="Geef een bericht in"></textarea>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="loading">Aan het laden</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Je bericht is verstuurd. Bedankt!</div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit">Verstuur</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End Contact Section -->
