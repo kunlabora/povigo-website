@@ -394,10 +394,6 @@ section {
       border-radius: 0;
       box-shadow: none;
       font-size: 14px;
-
-      &:focus {
-        background-color: $primary;
-      }
     }
 
     input {
