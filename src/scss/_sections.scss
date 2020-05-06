@@ -299,10 +299,6 @@ section {
       max-height: 95px;
       overflow: hidden;
       transition: max-height 0.5s ease-in-out;
-
-      &:hover {
-        max-height: 300px;
-      }
     }
 
     h4 {
