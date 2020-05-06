@@ -83,43 +83,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Details
---------------------------------------------------------------*/
-.details {
-  .content + .content {
-    margin-top: 100px;
-  }
-
-  .content {
-    h3 {
-      font-weight: 700;
-      font-size: 32px;
-      color: $secondary;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-
-      li {
-        padding-bottom: 10px;
-      }
-
-      i {
-        font-size: 20px;
-        padding-right: 4px;
-        color: $primary;
-      }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-}
-
-/*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
 .gallery {
@@ -170,107 +133,6 @@ section {
       }
     }
   }
-}
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials {
-
-  .testimonial-wrap {
-    padding-left: 50px;
-  }
-
-  .testimonial-item {
-    box-sizing: content-box;
-    padding: 30px 30px 30px 60px;
-    margin: 30px 15px;
-    min-height: 200px;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, .08);
-    position: relative;
-    background: $white;
-
-    .testimonial-img {
-      width: 90px;
-      border-radius: 10px;
-      border: 6px solid #fff;
-      position: absolute;
-      left: -45px;
-    }
-
-    h3 {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 10px 0 5px 0;
-      color: #111;
-    }
-
-    h4 {
-      font-size: 14px;
-      color: #999;
-      margin: 0;
-    }
-
-    .quote-icon-left, .quote-icon-right {
-      color: lighten($primary, 40);
-      font-size: 26px;
-    }
-
-    .quote-icon-left {
-      display: inline-block;
-      left: -5px;
-      position: relative;
-    }
-
-    .quote-icon-right {
-      display: inline-block;
-      right: -5px;
-      position: relative;
-      top: 10px;
-    }
-
-    p {
-      font-style: italic;
-      margin: 15px auto 15px auto;
-    }
-
-  }
-
-  .owl-nav, .owl-dots {
-    margin-top: 5px;
-    text-align: center;
-  }
-
-  .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ddd !important;
-  }
-
-  .owl-dot.active {
-    background-color: $primary !important;
-  }
-
-  @media (max-width: 767px) {
-    .testimonial-wrap {
-      padding-left: 0;
-    }
-
-    .testimonial-item {
-      padding: 30px;
-      margin: 15px;
-
-      .testimonial-img {
-        position: static;
-        left: auto;
-      }
-    }
-
-  }
-
 }
 
 /*--------------------------------------------------------------
@@ -350,126 +212,6 @@ section {
       margin-bottom: 110px;
     }
   }
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing {
-
-  .row {
-    padding-top: 40px;
-  }
-
-  .box {
-    padding: 40px;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-    background: #fff;
-    text-align: center;
-  }
-
-  h3 {
-    font-weight: 300;
-    margin-bottom: 15px;
-    font-size: 28px;
-  }
-
-  h4 {
-    font-size: 46px;
-    color: $primary;
-    font-weight: 400;
-    font-family: $font-default;
-    margin-bottom: 25px;
-
-    span {
-      color: #bababa;
-      font-size: 18px;
-      display: block;
-    }
-  }
-
-  ul {
-    padding: 0;
-    list-style: none;
-    color: #999;
-    text-align: left;
-    line-height: 20px;
-
-    li {
-      padding-bottom: 12px;
-    }
-
-    i {
-      color: $primary;
-      font-size: 18px;
-      padding-right: 4px;
-    }
-
-    .na {
-      color: #ccc;
-
-      i {
-        color: #ccc;
-      }
-
-      span {
-        text-decoration: line-through;
-      }
-    }
-  }
-
-  .get-started-btn {
-    background: $secondary;
-    display: inline-block;
-    padding: 6px 30px;
-    border-radius: 20px;
-    color: #fff;
-    transition: none;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: $font-primary;
-    transition: 0.3s;
-
-    &:hover {
-      background: $primary;
-    }
-  }
-
-  .featured {
-    z-index: 10;
-    margin: -30px -5px 0 -5px;
-
-    .get-started-btn {
-      background: $primary;
-
-      &:hover {
-        background: lighten($primary, 8);
-      }
-    }
-  }
-
-  @media (max-width: 992px) {
-    .box {
-      max-width: 60%;
-      margin: 0 auto 30px auto
-    }
-  }
-
-  @media (max-width: 767px) {
-    .box {
-      max-width: 80%;
-      margin: 0 auto 30px auto
-    }
-  }
-
-  @media (max-width: 420px) {
-    .box {
-      max-width: 100%;
-      margin: 0 auto 30px auto
-    }
-  }
-
 }
 
 /*--------------------------------------------------------------
@@ -588,7 +330,7 @@ section {
     }
   }
 
-  .php-email-form {
+  .contact-form {
 
     width: 100%;
 
@@ -652,10 +394,6 @@ section {
       border-radius: 0;
       box-shadow: none;
       font-size: 14px;
-
-      &::focus {
-        background-color: $primary;
-      }
     }
 
     input {
@@ -684,12 +422,12 @@ section {
   }
 
   @media (max-width: 1024px) {
-    .php-email-form {
+    .contact-form {
       padding: 30px 15px 15px 15px;
     }
   }
   @media (max-width: 768px) {
-    .php-email-form {
+    .contact-form {
       padding: 15px 0 0 0;
     }
   }
