@@ -108,10 +108,10 @@ section {
     height: 12px;
     border-radius: 50%;
     background-color: #fff !important;
-  }
 
-  .owl-dot.active {
-    background-color: $primary !important;
+    &.active {
+      background-color: $primary !important;
+    }
   }
 
   .gallery-carousel {
