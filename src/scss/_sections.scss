@@ -89,7 +89,7 @@ section {
   overflow: hidden;
 
   img {
-    border-radius: 25px;
+    border-radius: 19px;
   }
 
   .owl-nav, .owl-dots {
@@ -124,7 +124,6 @@ section {
     @media (min-width: 992px) {
       .center {
         border: 6px solid $primary;
-        padding: 4px;
         background: #fff;
         z-index: 1;
         transform: scale(1.2);
