@@ -1,0 +1,26 @@
+name: Security Scan
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+
+  scan-credentials:
+    name: Scan for leaked credentials
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run TruffleHog to scan for leaked credentials
+        uses: trufflesecurity/trufflehog@v3.4.3
+        with:
+          # Repository path
+          path: ./
+          # Start scanning from here (usually main branch).
+          base: 8c04276185b9bc1bc25a67f257e60bc6faefc63d
+          # Scan commits until here (usually dev branch).
+          head: HEAD
